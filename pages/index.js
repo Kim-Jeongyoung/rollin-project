@@ -6,9 +6,9 @@ const Homepage = () => {
     <>
       <Hero
         imgSrc="/homepage-hero.jpg"
-        imgAlt="happy kids"
-        title="Love yourself"
-        subtitle="Joy &amp; Joyful moment with smile"
+        imgAlt="satified woman eating in restaurant"
+        title="Rollin"
+        subtitle="Best Western &amp; Japanese Fusion Restaurant In Town"
       />
 
       <Container maxWidth="sm">
