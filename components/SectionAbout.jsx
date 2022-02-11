@@ -1,6 +1,9 @@
 import { Container, Grid } from '@mui/material';
 import Image from 'next/image';
 import Typography from '@mui/material/Typography'; //The Paragraph Column
+// The Call To Action (CTA) Button
+import MuiNextLink from '@components/MuiNextLink';
+import Button from '@mui/material/Button';
 
 const SectionAbout = () => {
   return (
@@ -16,7 +19,15 @@ const SectionAbout = () => {
             height={600}
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          container
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+        >
           {/* Add The Paragraph Column */}
           <Typography
             component="h2"
@@ -24,13 +35,19 @@ const SectionAbout = () => {
             textAlign="center"
             gutterBottom
           >
-            A Japanese Chef Who Love Western Food
+            A Korean Chef Who Love Western Food
           </Typography>
-          <Typography textAlign="center">
-            {`We mix Japanese and Western ingredients and cooking methods. Provide you
-    with a different tasting dimension with the fusion food in our restaurant.
-    Don't miss the chance to surprise your tongue!`}
+          <Typography textAlign="center" sx={{ mb: 5 }}>
+            {`We mix Korean and Western ingredients and cooking methods. Provide you
+            with a different tasting dimension with the fusion food in our restaurant.
+            Don't miss the chance to surprise your tongue!`}
           </Typography>
+          {/* The Call To Action (CTA) Button */}
+          <MuiNextLink href="/about-us" underline="none">
+            <Button variant="outlined" size="large">
+              About Us
+            </Button>
+          </MuiNextLink>
         </Grid>
       </Grid>
     </Container>
