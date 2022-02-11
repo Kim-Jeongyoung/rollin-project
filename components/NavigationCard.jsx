@@ -19,6 +19,7 @@ const NavigationCard = ({ imgSrc, imgAlt, title, desc, pagePath, ctaText }) => {
           {desc}
         </Typography>
       </CardContent>
+      {/* The Card Actions */}
       <CardActions>
         <MuiNextLink href={pagePath} underline="none">
           <Button variant="contained" size="large">
