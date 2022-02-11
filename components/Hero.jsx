@@ -27,43 +27,44 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
           inset: 0,
           backgroundColor: 'rgba(0,0,0, .7)',
         }}
-      ></Grid>
-      {/* Add Title & Subtitle */}
-      <Grid
-        container
-        item
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
       >
-        <Typography
-          variant="h1"
-          align="center"
-          gutterBottom
-          sx={{
-            color: 'secondary.main',
-            fontWeight: 400,
-          }}
+        {/* Add Title & Subtitle */}
+        <Grid
+          container
+          item
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
         >
-          {title}
-        </Typography>
-        <Typography
-          component="p"
-          variant="h3"
-          align="center"
-          color="common.white"
-          sx={{
-            mb: 10,
-          }}
-        >
-          {subtitle}
-        </Typography>
+          <Typography
+            variant="h1"
+            align="center"
+            gutterBottom
+            sx={{
+              color: 'secondary.main',
+              fontWeight: 400,
+            }}
+          >
+            {title}
+          </Typography>
+          <Typography
+            component="p"
+            variant="h3"
+            align="center"
+            color="common.white"
+            sx={{
+              mb: 10,
+            }}
+          >
+            {subtitle}
+          </Typography>
 
-        {/* A Hint To Scroll Down */}
-        <Typography component="p" variant="h6" color="secondary" gutterBottom>
-          Scroll
-        </Typography>
-        <ArrowDownward fontSize="large" color="secondary" />
+          {/* A Hint To Scroll Down */}
+          <Typography component="p" variant="h6" color="secondary" gutterBottom>
+            Scroll
+          </Typography>
+          <ArrowDownward fontSize="large" color="secondary" />
+        </Grid>
       </Grid>
     </Grid>
   );
