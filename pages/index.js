@@ -1,5 +1,6 @@
 import Container from '@mui/material/Container';
 import Hero from '@components/Hero';
+import SectionAbout from '@components/SectionAbout';
 
 const Homepage = () => {
   return (
@@ -10,6 +11,8 @@ const Homepage = () => {
         title="Rollin"
         subtitle="Best Western &amp; Japanese Fusion Restaurant In Town"
       />
+
+      <SectionAbout />
 
       <Container maxWidth="sm">
         <h1>Home Page</h1>

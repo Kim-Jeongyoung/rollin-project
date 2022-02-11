@@ -59,6 +59,7 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
           {subtitle}
         </Typography>
 
+        {/* A Hint To Scroll Down */}
         <Typography component="p" variant="h6" color="secondary" gutterBottom>
           Scroll
         </Typography>
