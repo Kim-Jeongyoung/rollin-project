@@ -18,6 +18,7 @@ import MuiNextLink from '@components/MuiNextLink';
 //Johnny https://youtu.be/9tJTEGG0t-M
 // https://www.npmjs.com/package/@svgr/webpack
 import Logo from 'components/svgs/rollin-logo-white.svg';
+// import Logo from "../public/rollinlogowhite.svg";
 
 import Navbar from './Navbar';
 import SideDrawer from './SideDrawer';
